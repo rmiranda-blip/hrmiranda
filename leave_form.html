@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leave Application - CDA HR System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-container">
+    <header>
+        <img src="logo.png" class="logo-small">
+        <h2>Republic of the Philippines<br>COOPERATIVE DEVELOPMENT AUTHORITY<br>3/F Balebria Bldg., Pili Drive, 8600 Butuan City</h2>
+        <h3>APPLICATION FOR LEAVE</h3>
+    </header>
+    <form id="leaveForm">
+        <label>Employee Name: <input type="text" id="empNameInput" required></label>
+        <label>Position: <input type="text" id="empPosInput" required></label>
+        <label>Leave Type:
+            <select id="leaveType">
+                <option>Vacation Leave</option>
+                <option>Sick Leave</option>
+                <option>Special Leave</option>
+                <option>Others</option>
+            </select>
+        </label>
+        <label>Inclusive Dates: <input type="text" id="dates" placeholder="e.g. Oct 26–28, 2025"></label>
+        <label>Number of Days: <input type="number" id="days"></label>
+        <label>Commutation: <input type="text" id="commutation"></label>
+        <label>Reason: <textarea id="reason"></textarea></label>
+        <button type="button" onclick="generateLeave()">Generate & Print</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
